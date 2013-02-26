@@ -56,21 +56,21 @@ public class DensityActivity extends Activity {
         root.setOrientation(LinearLayout.VERTICAL);
 
         LinearLayout layout = new LinearLayout(this);
-        addBitmapDrawable(layout, R.drawable.logo120dpi, true);
+//        addBitmapDrawable(layout, R.drawable.logo120dpi, true);
         addBitmapDrawable(layout, R.drawable.logo160dpi, true);
         addBitmapDrawable(layout, R.drawable.logo240dpi, true);
         addLabelToRoot(root, "Prescaled bitmap in drawable");
         addChildToRoot(root, layout);
 
         layout = new LinearLayout(this);
-        addBitmapDrawable(layout, R.drawable.logo120dpi, false);
+//        addBitmapDrawable(layout, R.drawable.logo120dpi, false);
         addBitmapDrawable(layout, R.drawable.logo160dpi, false);
         addBitmapDrawable(layout, R.drawable.logo240dpi, false);
         addLabelToRoot(root, "Autoscaled bitmap in drawable");
         addChildToRoot(root, layout);
 
         layout = new LinearLayout(this);
-        addResourceDrawable(layout, R.drawable.logo120dpi);
+//        addResourceDrawable(layout, R.drawable.logo120dpi);
         addResourceDrawable(layout, R.drawable.logo160dpi);
         addResourceDrawable(layout, R.drawable.logo240dpi);
         addLabelToRoot(root, "Prescaled resource drawable");
@@ -85,14 +85,14 @@ public class DensityActivity extends Activity {
         addChildToRoot(root, layout);
         
         layout = new LinearLayout(this);
-        addCanvasBitmap(layout, R.drawable.logo120dpi, true);
+//        addCanvasBitmap(layout, R.drawable.logo120dpi, true);
         addCanvasBitmap(layout, R.drawable.logo160dpi, true);
         addCanvasBitmap(layout, R.drawable.logo240dpi, true);
         addLabelToRoot(root, "Prescaled bitmap");
         addChildToRoot(root, layout);
 
         layout = new LinearLayout(this);
-        addCanvasBitmap(layout, R.drawable.logo120dpi, false);
+//        addCanvasBitmap(layout, R.drawable.logo120dpi, false);
         addCanvasBitmap(layout, R.drawable.logo160dpi, false);
         addCanvasBitmap(layout, R.drawable.logo240dpi, false);
         addLabelToRoot(root, "Autoscaled bitmap");
