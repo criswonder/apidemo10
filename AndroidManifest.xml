@@ -1222,7 +1222,9 @@
 
         <activity android:name=".view.Controls1"
                 android:label="Views/Controls/1. Light Theme"
-                android:theme="@android:style/Theme.Light">
+                android:theme="@android:style/Theme.Light"
+                android:windowSoftInputMode="stateHidden"
+                >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
