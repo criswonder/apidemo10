@@ -22,7 +22,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.*;
 import android.os.Bundle;
-import android.view.KeyEvent;
+import android.util.Log;
 import android.view.*;
 
 public class MeasureText extends GraphicsActivity {
@@ -36,6 +36,7 @@ public class MeasureText extends GraphicsActivity {
     private static final int WIDTH = 50;
     private static final int HEIGHT = 50;
     private static final int STRIDE = 64;   // must be >= WIDTH
+	public static final String TAG = "MeasureText";
     
     private static int[] createColors() {
         int[] colors = new int[STRIDE * HEIGHT];
@@ -97,6 +98,7 @@ public class MeasureText extends GraphicsActivity {
             mPaint.setColor(Color.RED);
             mPaint.setStrokeWidth(0);
             canvas.drawLine(0, 0, w, 0, mPaint);
+            Log.d(TAG, "text="+text+",width="+w);
             mPaint.setStrokeWidth(5);
             canvas.drawPoints(pts, 0, (count + 1) << 1, mPaint);
         }
